@@ -19,9 +19,9 @@ odm                 /odm         ext4        ro,barrier=1,discard               
 odm                 /odm         erofs       ro                                  wait,logical,first_stage_mount
 
 # Direct image flashing
-/system_image       emmc         /dev/block/bootdevice/by-name/system            flags=backup=1;flashimg=1
-/odm_image          emmc         /dev/block/bootdevice/by-name/odm               flags=backup=1;flashimg=1;display="ODM Image"
-/product_image      emmc         /dev/block/bootdevice/by-name/product           flags=backup=1;flashimg=1;display="Product Image"
+/system_image       emmc         /dev/block/bootdevice/by-name/system            flags=backup=1;flashimg=1;display="System";wipeingui
+/odm_image          emmc         /dev/block/bootdevice/by-name/odm               flags=backup=1;flashimg=1;display="ODM"
+/product_image      emmc         /dev/block/bootdevice/by-name/product           flags=backup=1;flashimg=1;display="Product"
 /vendor_image       emmc         /dev/block/bootdevice/by-name/vendor            flags=backup=1;flashimg=1
 
 # ETC Moint Point

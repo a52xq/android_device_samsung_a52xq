@@ -7,10 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),a52xq)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
-endif
-
 
 ifeq ($(BOARD_USES_QCOM_FBE_DECRYPTION),true)
     BOARD_USES_QCOM_DECRYPTION := true
